@@ -1,5 +1,7 @@
 ![bmi_calc_flutter](https://github.com/adityanjr/bmi_calculator_flutter/blob/master/bmi.jpg)
 
+# Screen Shots
+<img src="screenshots/splash.PNG" height="300em" /><img src="screenshots/1.PNG" height="300em" /><img src="screenshots/2.PNG" height="300em" />
 ### Installation
 
 After cloning:

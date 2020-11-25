@@ -66,6 +66,9 @@ flutter:
     - family: Moderne
       fonts:
         - asset: assets/Moderne Sans Font.ttf
+    - family: DesirasNonCommercial
+      fonts:
+        - asset: assets/DesirasNonCommercial.otf
     # - family: Trajan Pro
     #   fonts:
     #     - asset: fonts/TrajanPro.ttf

@@ -117,9 +117,9 @@ class BottomButton extends StatelessWidget {
             buttonText,
             style: TextStyle(
                 color: Colors.white,
-                fontSize: 24.0,
+                fontSize: 50.0,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Moderne'),
+                fontFamily: 'DesirasNonCommercial'),
           ),
         ),
       ),

@@ -8,7 +8,7 @@ const genderActiveColor_female = Color(0xFFFFB6C1);
 const genderActiveButton = Color(0xFF0276FD);
 const genderActiveButton_Female = Colors.pink;
 const heightBackgroundColor = Color(0xFFffcccc);
-const heightActiveColor = Color(0xFFe50000);
+const heightActiveColor = Colors.white;
 const heightInactiveColor = Color(0xFFffb2b2);
 const weightBackgroundColor = Color(0xFFE0FFFF);
 const weightActiveColor = Color(0xFF00CDCD);
@@ -19,7 +19,7 @@ const bottomContainerColor = Color(0xFF0276FD);
 
 //Text Styles
 TextStyle labelStyle(Color colour) {
-  return TextStyle(fontSize: 16.0, color: colour, fontFamily: 'Kayak', fontWeight: FontWeight.w800);
+  return TextStyle(fontSize: 20.0, color: colour, fontFamily: 'Kayak', fontWeight: FontWeight.w800);
 }
 
 const thickFontStyle = TextStyle(
@@ -59,8 +59,10 @@ class ContainerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return
+      Card(
       child: childCard,
+      shadowColor: Colors.green,
       color: colour,
       margin: EdgeInsets.all(16.0),
       elevation: 4.0,

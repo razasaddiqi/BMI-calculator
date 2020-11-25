@@ -83,51 +83,66 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ContainerCard(
+
               colour: heightBackgroundColor,
-              childCard: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    'HEIGHT',
-                    style: labelStyle(heightActiveColor),
-                  ),
-                  SizedBox(height: 8.0),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.baseline,
-                    textBaseline: TextBaseline.alphabetic,
-                    children: <Widget>[
-                      Text(
-                        height.toString(),
-                        style: thickFontStyle,
-                      ),
-                      SizedBox(
-                        width: 6.0,
-                      ),
-                      Text(
-                        'cm',
-                        style: TextStyle(
-                            color: heightActiveColor,
-                            fontSize: 25.0,
-                            fontFamily: 'Moderne',
-                            fontWeight: FontWeight.w600),
-                      ),
-                    ],
-                  ),
-                  Slider(
-                    value: height.toDouble(),
-                    min: 120.0,
-                    max: 220.0,
-                    inactiveColor: heightInactiveColor,
-                    activeColor: heightActiveColor,
-                    onChanged: (double newValue) {
-                      setState(() {
-                        height = newValue.round();
-                      });
-                    },
-                  ),
-                ],
-              ),
+
+              childCard:Container(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: <Color>[
+                        Color(0xFF001C24),
+                        Color(0xFF096B79),
+                        Color(0xFF096B79),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(12.0)
+                ),
+                child:Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'HEIGHT',
+                      style: labelStyle(heightActiveColor),
+                    ),
+                    SizedBox(height: 8.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: <Widget>[
+                        Text(
+                          height.toString(),
+                          style: thickFontStyle,
+                        ),
+                        SizedBox(
+                          width: 6.0,
+                        ),
+                        Text(
+                          'cm',
+                          style: TextStyle(
+                              color: heightActiveColor,
+                              fontSize: 25.0,
+                              fontFamily: 'Moderne',
+                              fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Slider(
+                      value: height.toDouble(),
+                      min: 120.0,
+                      max: 220.0,
+                      inactiveColor: heightInactiveColor,
+                      activeColor: heightActiveColor,
+                      onChanged: (double newValue) {
+                        setState(() {
+                          height = newValue.round();
+                        });
+                      },
+                    ),
+                  ],
+                ),
+              )
+
             ),
           ),
           Expanded(

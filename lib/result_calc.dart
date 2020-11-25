@@ -16,12 +16,15 @@ class Calculator {
   }
 
   String getResult() {
-    if (_bmi >= 25) {
+    if (_bmi >= 25 && _bmi<=30) {
       return 'Overweight';
-    } else if (_bmi > 18.5) {
+    }else if (_bmi >= 18.6 && _bmi<25.0) {
       return 'Normal';
-    } else {
+    }
+    else if (_bmi >= 16.0 && _bmi<=18.5) {
       return 'Underweight';
+    } else {
+      return 'Severely Underweight';
     }
   }
 

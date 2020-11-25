@@ -67,13 +67,13 @@ class _InputPageState extends State<InputPage> {
                     },
                     child: ContainerCard(
                       colour: selectedGender == 'female'
-                          ? genderActiveColor
+                          ? genderActiveColor_female
                           : Colors.white,
                       childCard: IconContent(
                           icon: FontAwesome5.female,
                           text: 'FEMALE',
                           colour: selectedGender == 'female'
-                              ? genderActiveButton
+                              ? genderActiveButton_Female
                               : Colors.grey),
                     ),
                   ),

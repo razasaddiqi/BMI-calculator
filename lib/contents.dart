@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 //COLORS
 
 const genderActiveColor = Color(0xFFBFEFFF);
+const genderActiveColor_female = Color(0xFFFFB6C1);
 const genderActiveButton = Color(0xFF0276FD);
+const genderActiveButton_Female = Colors.pink;
 const heightBackgroundColor = Color(0xFFffcccc);
 const heightActiveColor = Color(0xFFe50000);
 const heightInactiveColor = Color(0xFFffb2b2);
